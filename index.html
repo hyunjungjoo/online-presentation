@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Tonal Center of Gravity: A global approach to tonal implementation in a level-based intonational phonology</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Hyunjung Joo" />
+    <meta name="date" content="2023-04-17" />
+    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/rutgers-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rutgers.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Tonal Center of Gravity: A global approach to tonal implementation in a level-based intonational phonology
+]
+.subtitle[
+## Barnes, Brugos, Veilleux &amp; Shattuck-Hufnagel (2012)
+]
+.author[
+### Hyunjung Joo
+]
+.institute[
+### Rutgers University
+]
+.date[
+### 2023-04-17
+]
+
+---
+
+# 1. Introduction
+### How do we define intonational contour?
+
+- When we speak, we produce strings of segments, but importantly always with some kind of melody, which is continuous and has ups and downs. This refers to **intonational contour**. 
+
+- However, due to its continuous nature along the time course of speech sounds and its fluctuating nature along the pitch level, it is **difficult to find discrete phonological units of the intonational contour**.
+
+&lt;img src="images/picture1.png" width="90%" style="display: block; margin: auto;" /&gt;
+---
+# 1. Introduction
+### Autosegmental-Metrical (AM) theory of Intonational Phonology
+- Intonational contours consist of **f0 turning points (e.g., Highs, Lows)**. 
+
+- f0 curve is **just an output** from the linear interpolation between the targets.
+
+&lt;img src="images/picture2.png" width="40%" style="display: block; margin: auto;" /&gt;
+### This Autosegmental-Metrical model has been a mainstream theory in the Intonational Phonology for several decades. 
+---
+# 1. Introduction
+### But there are some problems in the AM model.
+
+.pull-left[
+(1) Regions that could define crucial turning points are **frequently missing** from the f0 curve due to voicelessness or irregular phonation.
+
+&lt;img src="images/picture16.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+(2) The f0 turning points cannot consider variations in f0 contour shapes. **Importantly, contour shapes matter in perceiving the rise-fall accent.**
+
+&lt;img src="images/picture17.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+---
+# 1. Introduction
+### An alternative to AM model has been proposed to account for variations in f0 contour.
+
+.pull-left[
+### Tonal Center of Gravity (TCoG)
+
+
+### = `\(\frac{\sum_{i}^nf0_i}{\sum_{i}^nf0_it_i}\)`
+]
+
+.pull-right[
+- **A perceptual reference of the overall distribution** of the ‘weight’ or ‘mass’ of the f0 event.
+
+- **A generalization about various aspects** of durations, slopes, curvatures, and symmetries of the rises and falls comprising f0 peaks.
+
+&lt;img src="images/picture3.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+---
+# 2. Research questions
+### Q1. Which theory better explains in categorizing L+H\* vs. L\*+H in American English?
+- **Tonal Center of Gravity**  *vs.*  **AM model** (L, H turning points)
+
+### Q2. How do two approaches work under adverse conditions?
+- Even **when there are missing f0 values (noises)**, which theory better explains the intonational contour?
+---
+class: middle, center
+# Exp 1. Categorizing contrasting pitch accents: L+H\* vs. L\*+H
+---
+# 3. Methods
+
+### 3.1. Participants
+- Six native speakers of American English (18-50 years old)
+
+### 3.2. Speech materials 
+- 29 dialogues containing utterances like *There's a mellower one* with either **L+H\*** meaning *incredulity* or **L\*+H** meaning *uncertainty*. 
+
+- A total of 116 productions per subject in a randomized block (29 dialogues x 4 repetition)
+
+&lt;img src="images/picture4.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+# 3. Methods
+
+### 3.3. Labelling important timepoints of the f0 contour 
+- To test the AM model, f0 minimum was analyzed as **an L turning point**, f0 maximum as **a H turning point**.
+
+- To test the TCoG model, continuous f0 values of the shaded region were extracted and were computed with the TCoG equation, getting **a single time value** for each utterance. 
+
+&lt;img src="images/picture5.png" width="55%" style="display: block; margin: auto;" /&gt;
+---
+# 4. Results
+### 4.1 Binary logistic regression for the TCoG model
+- Dependent variable: **pitch accent category** (**L+H\*** coded as **0**, **L\*+H** coded as **1**)
+
+- Independent variable: **TCoG alignment** (mean distance from TCoG to midpoint of the accented vowel) 
+.pull-left[
+&lt;img src="images/picture6.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+&lt;img src="images/picture9.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/picture11.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+---
+# 4. Results
+### 4.1. Binary logistic regression for the TCoG model
+- **Their description of Table 1**: "The substantial separation between TCoG alignments for the two pitch accents achieved for each speaker, suggesting that TCoG alignment could function as a reliable cue to pitch accent category."
+
+- **Their description of Table 2 and 3**: "The results of this analysis make it clear that TCoG achieves significant success in classifying the productions of our participants by pitch accent category." 
+    
+    "This can be seen, in particular, in the high model chi-square obtained in the Likelihood Ratio test, the high value of Nagelkerke’s R-squared, and perhaps most transparently in the high overall percent correct shown in the classification table (nearly 95%)."
+---
+# 4. Results
+### 4.1. Binary logistic regression for the TCoG model
+
+- **Their description of Table 2 and 3**:
+
+    **&amp;rarr; They didn't show specific interpretation of the logistic regression analysis in Table 2. For instance, this kind of interpretation needs to be added: one unit increase in TCoG alignment yields a change in the log odds of selecting "L\*+H" by 136. But in this case, this beta value seems weird since the probability of the log odds for 136 is 1 (100%). But the probability log odds over 17 are always 1 (100%).**
+.pull-left[
+
+```r
+plogis(136)
+```
+
+```
+## [1] 1
+```
+]
+.pull-right[
+
+```r
+plogis(17)
+```
+
+```
+## [1] 1
+```
+]
+
+    **But when we look at the R-squared value, the regression model explains the variance well and the overall correct percentage is high, showing that the accuracy of their model is 94.3%.**
+---
+# 4. Results
+### 4.2. Binary logistic regression for the AM model
+- Dependent variable: **pitch accent category** (**L+H\*** coded as **0**, **L\*+H** coded as **1**)
+
+- Independent variable: **Rise onset alignment** (mean distance from L turning point to onset of the accented vowel), **Peak alignment** (mean distance from H turning point to offset of accented vowel)
+.pull-left[
+&lt;img src="images/tp1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+&lt;img src="images/tp2.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+---
+# 4. Results
+### 4.2. Binary logistic regression for the AM model
+- **Their description of Table 4 and 5**: "While the separation
+between the means in each case is comparable in size to that between the mean
+alignments for TCoG reported above, the standard deviations are higher for the
+turning points.
+
+    "This is particularly so for the rise onset, likely a reflection of the well-known ambiguity of the signal when it comes to identifying Low tones with single, precisely localizable F0 turning points."
+---
+# 4. Results
+### 4.2. Binary logistic regression for the AM model
+- **Their description of Table 6 and 7**: "The logistic regression analysis for each of the turning points in the AM model did not reach the level of the TCoG's categorization performance."
+
+    "However, when the two turning points are used together as independent variables in a single model, the significance of the model improved, but not as good as the TCoG model. Compare the two, for example, with respect to model chi-square (522 vs. 606, p &lt; .001 in both cases), Nagelkerke’s R2 (.809 vs. .883), and correct classification percentage (90.9% vs. 94.3%)."
+---
+# 4. Results
+### 4.2. Binary logistic regression for the AM model
+- **Their description of Table 6 and 7**: "The logistic regression analysis for each of the turning points in the AM model did not reach the level of the TCoG's categorization performance."
+
+    "However, when the two turning points are used together as independent variables in a single model, the significance of the model improved, but not as good as the TCoG model. Compare the two, for example, with respect to model chi-square (522 vs. 606, p &lt; .001 in both cases), Nagelkerke’s R2 (.809 vs. .883), and correct classification percentage (90.9% vs. 94.3%)."
+
+    **&amp;rarr; They didn't show specific descriptions of the logistic regression analysis in Table 6. For instance, one unit increase in Rise onset alignment yields a change in the log odds of selecting "L\*+H" by 33, and one unit increase in Peak alignment yields a change in the log odds of selecting "L\*+H" by 68. But these beta values seem weird because the probability of these log odds are already 1.**
+    
+    **But setting aside the beta values, they compares two regression models and classifications, showing that the TCoG model explains the variance and shows more accuracy than the AM model.**
+---
+class: middle, center
+# Exp 2. Robustness of categorization under adverse conditions
+---
+# 5. Methods
+### 5.1. Participants and speech materials
+- The same as in Exp 1.
+
+### 5.2. Relabeling: adding noise (adding a degree of random variability (ms))
+- The noise-generation and subsequent relabelling and reanalysis procedure was carried out a total of 30 times at each noise level.
+
+&lt;img src="images/picture13.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+# 6. Results
+### 6.1. A number of logistic regression analyses
+- **Their description**: "Owing to the large number of distinct logistic regression analyses conducted here (2 models × 7 noise levels × 30 trials = 420), complete details of each regression model will not be given here, but instead, results will be characterized only in terms of percent correct classifications."
+
+---
+# 6. Results
+### 6.1. A number of logistic regression analyses
+- **Their description**: "Owing to the large number of distinct logistic regression analyses conducted here (2 models × 7 noise levels × 30 trials = 420), complete details of each regression model will not be given here, but instead, results will be characterized only in terms of percent correct classifications."
+
+    **&amp;rarr;** ****They didn't give us sufficient information about the logistic regression analyses when the noise was added. Even if there were a large number of the logistic regression analyses, they should have figured out some ways to show us some of the results, for instance, at least some of the summary tables of the logistic regression analyses.****
+---
+# 6. Results
+### 6.1. Mean percent correct classification of L+H\* and L\*+H for the TCoG and AM models
+.pull-left[
+&lt;img src="images/picture14.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+- **Their description**: "While the performance of both models eventually degrades to some extent with the addition of labelling noise, the accuracy of the AM model degrades far more rapidly than does that of the TCoG model with each level of noise added."
+    
+   "While the TCoG model appears to level off in performance around 85% correct in the noisiest conditions, the AM model drops all the way to the mid-60s, and declines gradually by the time the noisiest level is reached."
+
+]
+---
+# 6. Results
+### 6.1. Mean percent correct classification of L+H\* and L\*+H for the TCoG and AM models
+.pull-left[
+&lt;img src="images/picture14.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+- **Their description**: "While the performance of both models eventually degrades to some extent with the addition of labelling noise, the accuracy of the AM model degrades far more rapidly than does that of the TCoG model with each level of noise added."
+    
+   "While the TCoG model appears to level off in performance around 85% correct in the noisiest conditions, the AM model drops all the way to the mid-60s, and declines gradually by the time the noisiest level is reached."
+
+    **&amp;rarr; They showed specific interpretations of percent correct classification. This visual representation helped me to compare the two models in classification.**
+]
+---
+# 7. Conclusion
+- The TCoG model is capable of outperforming standard AM models of tonal implementation in classifying pitch accents.
+
+- Unlike the AM model, the TCoG model does not require the precise location of any particular points within the f0 contour. Thus, the TCoG model remains relatively stable under conditions of variability. 
+
+- To conclude, the TCoG model is capable of capturing a range of perceptual effects involving global contour shape that remains puzzle in a unified way.
+---
+# 8. Evaluation
+### Explanation of analysis
+#### What did they do?
+- **Exp1**: Compared the ability of the TCoG model with the AM model to correctly classify utterances of American English pitch accents, L+H\* and L\*+H.
+
+- **Exp2**: Demonstrated the robustness
+of the TCoG measure when there are missing values in f0, such as pitch movement onsets and offsets.
+
+#### How did they do it?
+- **Exp1**: Conducted binary logistic regression models for the TCoG and the AM models, respectively, and provided classification tables of correct percentage to show that the TCoG works better.
+
+- **Exp2**: Conducted a number of logistic regression models and provided a graph of mean percent correct classification of L+H\* vs. L\*+H for the TCoG and AM models.
+---
+# 8. Evaluation
+### Explanation of analysis
+#### Why did they do it?
+- Dependent variable, *pitch accent category*, is a categorical variable, which are either 
+L+H\* and L\*+H pitch accents, while independent variables (TCoG, Rise onset, and peak alignments) are continuous.
+
+- The percent correct classification was to show the accuracy of the regression models for the two models, respectively. 
+---
+# 8. Evaluation
+### Appropriateness/novelty of analysis
+- For the pitch accent categorization, it was appropriate to use binary regression analysis, since the dependent variable, *pitch accent category*, is categorical. 
+
+- However, it is difficult to understand how they interpreted the binary logistic regressions. Logistic regression uses the log odds for the observed event, but the beta values in this study are so great (e.g., 136, 33, 68) such that the probability of these log odds are always 1 (100%). I wonder whether there are other ways they are interpreting, but other than that, it is difficult to understand since there is no detailed explanation about this.  
+
+- For the classification analysis, this is my first time to see this analysis. But the logic and the way they are doing appear to be appropriate, since they wanted to see how the two theories would work by showing their predictions based on what they observed and comparing the accuracy of the models.
+
+---
+# 8. Evaluation
+### Presentation of results
+
+- I am not sure about their explanation of the results is correct due to the beta values in the summary of the regression analysis. Other than that, however, other explanations appear to be correct when they show the R-squared and the mean percent correct. It would have been great if they provided more specific interpretations about the statistical analysis.
+
+- They used tables to interpret the results, but there was only one graph to visualize the results. It would have been better if they showed more visualization for the comparison of the theories. 
+---
+# 8. Evaluation
+### Overall evaluation
+
+- I liked the way they were trying to test their hypothesis using logistic regression models and using the classification table for the comparison of both theories.
+
+- Also, they used R-squared values and correct percentage for the model comparison.
+
+- However, they did not provide detailed explanation about the interpretation of the statistical analysis, such that it was so confusing to understand the results. Overall, they omitted a lot of explanation for the results and statistical analyses.
+
+- There was only one graph that visualizes the correct percentage of classification. But it would have been better if they provided more graphs to show different performance of the models. 
+---
+class: middle, center
+# Thank you!
+
+### You can find the paper here.  [Barnes, J., Veilleux, N., Brugos, A., &amp; Shattuck-Hufnagel, S. (2012). Tonal Center of Gravity: A global approach to tonal implementation in a level-based intonational phonology. Laboratory Phonology, 3(2), 337-383.](https://www.degruyter.com/document/doi/10.1515/lp-2012-0017/html)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
